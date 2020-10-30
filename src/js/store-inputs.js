@@ -12,7 +12,6 @@ export function storeInputs () {
     }
     return false
   })
-  console.log(INPUTS_TO_STORE)
 
   /**
    * Check and get LocalStorage,
@@ -23,7 +22,6 @@ export function storeInputs () {
     const localData = JSON.parse(localStorage.getItem('fieldsData'))
 
     localData.forEach((item) => {
-      console.log('item', item.id, item.val)
       document.getElementById(item.id).value = item.val
     })
   }
@@ -36,7 +34,6 @@ export function storeInputs () {
     const fieldsData = INPUTS_TO_STORE.filter((item) => item.value)
       .filter((item) => item.checkValidity())
       .map((item) => {
-        console.log(item.checkValidity())
         return { id: item.id, val: item.value }
       })
 
