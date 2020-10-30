@@ -1,0 +1,45 @@
+body {
+  /* margin: 1rem; */
+}
+
+.logo {
+  width: 33.33%;
+}
+
+input:valid, input:valid+span:after {
+  color: #208838;
+  border-color: #c1e6bb;
+}
+
+.legend {
+  padding-left: 0;
+}
+
+#reason-fieldset p {
+  color: #6c757d;
+}
+
+.form-checkbox.align-items-center {
+  padding-left: 1.3rem;
+}
+
+.titre-3 {
+  float: left;
+  font-size: 1.15rem;
+}
+
+.fieldset {
+  margin-top: 2.5em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border: none !important;
+}
+.fieldset-error {
+  border-radius: 1px;
+  box-shadow: 0 0 0 8px white, 0 0 0 11px #ff5858;
+}
+#reason-fieldset p.msg-alert {
+  color: red;
+}
