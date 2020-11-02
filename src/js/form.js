@@ -190,7 +190,7 @@ export function createForm () {
     .filter((field) => !field.isHidden)
     .map((field, index) => {
       const formGroup = createFormGroup({
-        autofocus: index === 0,
+        autofocus: false, // index === 0,
         ...field,
         name: field.key,
       })
