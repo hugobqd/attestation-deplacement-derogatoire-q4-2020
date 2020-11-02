@@ -78,6 +78,8 @@ input:valid, input:valid+span:after {
   border-radius: 4px;
   color: inherit;
   outline: none !important;
+  display: block;
+  margin-right: .5rem;
 }
 .reason-inner .help.open { 
 }
